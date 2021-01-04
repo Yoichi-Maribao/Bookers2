@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+body {
+    font-size: 1rem;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.actions {
+    margin-bottom: 10px;
+}
+
+.alert {
+    color: green;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+    margin-bottom: 0.5rem;
+}
+
+table th,
+table td {
+    text-align: left;
+}
