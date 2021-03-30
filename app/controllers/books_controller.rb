@@ -2,7 +2,8 @@ class BooksController < ApplicationController
   before_action :authenticate_user!
   def index
     @user = current_user
-    @books = Book.all
+    @books = Book.all.order(created_at: :desc)
+    @books = Book.page(params[:page]).per(5)
     @book = Book.new
   end
 
@@ -49,4 +50,5 @@ class BooksController < ApplicationController
   def book_params
     params.require(:book).permit(:title, :body)
   end
+
 end

@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
 before_action :authenticate_user!
   def index
-    @users = User.all
+    @users = User.all.order(created_at: :desc)
+    @users = User.page(params[:page]).per(5)
     @book = Book.new
   end
 
