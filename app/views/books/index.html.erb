@@ -1,6 +1,8 @@
-<%= render 'layouts/error', problem: @book %>
 <div class="col-md-3">
   <%= render 'layouts/info', books: @books, user: current_user %>
   <%= render 'layouts/new', book: @book %>
 </div>
-<%= render 'layouts/books', books: @books %>
+<%= render 'book_table', books: @books %>
+<div class="col-md-4 col-md-offset-4">
+  <%= paginate @books %>
+</div>

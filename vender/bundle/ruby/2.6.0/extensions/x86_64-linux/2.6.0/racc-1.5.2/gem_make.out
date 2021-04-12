@@ -1,0 +1,22 @@
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+/home/vagrant/.rbenv/versions/2.6.6/bin/ruby -I /home/vagrant/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210402-7259-1pvfdce.rb extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" clean
+make: Warning: File `Makefile' has modification time 350 s in the future
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR="
+make: Warning: File `Makefile' has modification time 350 s in the future
+compiling cparse.c
+linking shared-object racc/cparse.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" install
+make: Warning: File `Makefile' has modification time 350 s in the future
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20210402-7259-162ksa5/racc
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_01_17_075721) do
     t.string "title"
     t.text "body"
     t.integer "user_id"
+    t.integer "genre", limit: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

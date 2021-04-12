@@ -19,7 +19,8 @@ class BooksController < ApplicationController
     if @book.save
       redirect_to book_path(@book.id), notice: "You have created book successfully."
     else
-      @books = Book.all
+      @books = Book.all.order(created_at: :desc)
+      @books = Book.page(params[:page]).per(5)
       render 'index'
     end
   end
@@ -48,7 +49,6 @@ class BooksController < ApplicationController
 
   private
   def book_params
-    params.require(:book).permit(:title, :body)
+    params.require(:book).permit(:title, :body, :genre)
   end
-
 end

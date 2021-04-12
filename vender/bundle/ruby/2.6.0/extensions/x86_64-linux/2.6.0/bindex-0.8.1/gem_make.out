@@ -1,0 +1,21 @@
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/home/vagrant/.rbenv/versions/2.6.6/bin/ruby -I /home/vagrant/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210402-7259-bqibuq.rb extconf.rb
+creating Makefile
+
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+make: Warning: File `Makefile' has modification time 350 s in the future
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+make: Warning: File `Makefile' has modification time 350 s in the future
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+make: Warning: File `Makefile' has modification time 350 s in the future
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20210402-7259-17ntl1k/skiptrace/internal
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

@@ -1,0 +1,42 @@
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/bootsnap-1.7.3/ext/bootsnap
+/home/vagrant/.rbenv/versions/2.6.6/bin/ruby -I /home/vagrant/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210402-7259-1yfkplw.rb extconf.rb
+creating Makefile
+
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/bootsnap-1.7.3/ext/bootsnap
+make "DESTDIR=" clean
+make: Warning: File `Makefile' has modification time 350 s in the future
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/bootsnap-1.7.3/ext/bootsnap
+make "DESTDIR="
+make: Warning: File `Makefile' has modification time 350 s in the future
+compiling bootsnap.c
+bootsnap.c: 関数 ‘bs_rb_fetch’ 内:
+bootsnap.c:355:3: 警告: ISO C90 は宣言とコードの混合を禁止しています [-Wdeclaration-after-statement]
+   char * cachedir = RSTRING_PTR(cachedir_v);
+   ^
+bootsnap.c: 関数 ‘bs_rb_precompile’ 内:
+bootsnap.c:382:3: 警告: ISO C90 は宣言とコードの混合を禁止しています [-Wdeclaration-after-statement]
+   char * cachedir = RSTRING_PTR(cachedir_v);
+   ^
+bootsnap.c: 関数 ‘bs_rb_fetch’ 内:
+bootsnap.c:743:13: 警告: ‘output_data’ はこの関数内初期化されずに使用されるかもしれません [-Wmaybe-uninitialized]
+     else if (!NIL_P(output_data)) goto succeed; /* fast-path, goal */
+             ^
+bootsnap.c:706:9: 備考: ‘output_data’ はここで定義されています
+   VALUE output_data;  /* return data, e.g. ruby hash or loaded iseq */
+         ^
+bootsnap.c: トップレベル:
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-tautological-compare" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-self-assign" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-parentheses-equality" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-constant-logical-operand" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-cast-function-type" です [デフォルトで有効]
+linking shared-object bootsnap/bootsnap.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+current directory: /home/vagrant/workspace/portfolio/re_bookers2/vender/bundle/ruby/2.6.0/gems/bootsnap-1.7.3/ext/bootsnap
+make "DESTDIR=" install
+make: Warning: File `Makefile' has modification time 350 s in the future
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20210402-7259-iykujf/bootsnap
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

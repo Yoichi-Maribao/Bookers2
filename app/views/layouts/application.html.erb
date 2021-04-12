@@ -53,6 +53,9 @@
       </div>
     </header>
     <%= render partial: 'layouts/notice' %>
+    <% if controller.controller_name == 'books' %>
+      <%= render 'layouts/error', problem: @book %>
+    <% end %>
     <main class="mt-3">
       <div class="container">
         <div class="row">
@@ -60,7 +63,7 @@
         </div>
       </div>
     </main>
-    <footer class="fixed-bottom">
+    <footer class="fixed-bottom d-block">
       <div class="row">
         <div class="mx-auto">
           <p class="fas fa-book">Bookers</p>
